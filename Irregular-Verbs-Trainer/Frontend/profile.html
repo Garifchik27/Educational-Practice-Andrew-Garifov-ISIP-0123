@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Irregular Verbs Trainer</div>
+        <nav>
+            <a href="index.html">Обучение</a>
+            <a href="training.html">Тренировка</a>
+            <a href="profile.html" class="active">Личный кабинет</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Личный кабинет</h1>
+
+        <div id="unauth-block">
+            <div class="auth-card">
+                <h3>Вход в систему</h3>
+                <form id="login-form">
+                    <input type="text" id="login-username" placeholder="Логин" required>
+                    <input type="password" id="login-password" placeholder="Пароль" required>
+                    <button type="submit" class="btn-primary">Войти</button>
+                </form>
+                <hr>
+                <h3>Регистрация</h3>
+                <form id="register-form">
+                    <input type="text" id="reg-username" placeholder="Логин (минимум 3 символа)" required>
+                    <input type="password" id="reg-password" placeholder="Пароль (минимум 4 символа)" required>
+                    <button type="submit" class="btn-secondary">Зарегистрироваться</button>
+                </form>
+                <div id="auth-message" class="message"></div>
+            </div>
+        </div>
+
+        <div id="auth-block" style="display: none;">
+            <div class="profile-card">
+                <h2>👋 Привет, <span id="profile-username"></span>!</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-value" id="profile-record">0</span>
+                        <span class="stat-label">Личный рекорд</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="total-verbs-stat">0</span>
+                        <span class="stat-label">Глаголов выучено</span>
+                    </div>
+                </div>
+                <button id="logout-btn" class="btn-danger">Выйти из аккаунта</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

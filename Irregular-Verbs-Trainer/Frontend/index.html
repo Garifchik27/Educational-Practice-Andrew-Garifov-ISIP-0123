@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Irregular Verbs Trainer</div>
+        <nav>
+            <a href="index.html" class="active">Обучение</a>
+            <a href="training.html">Тренировка</a>
+            <a href="profile.html">Личный кабинет</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Таблица неправильных глаголов</h1>
+        <p class="subtitle">Выберите глагол для изучения. Всего глаголов: <span id="verb-count">0</span></p>
+        
+        <div class="search-filter">
+            <input type="text" id="search-input" placeholder="🔍 Поиск по глаголу или переводу...">
+            <select id="letter-filter">
+                <option value="all">Все глаголы</option>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table id="verbs-table">
+                <thead>
+                    <tr>
+                        <th>Infinitive</th>
+                        <th>Past Simple</th>
+                        <th>Past Participle</th>
+                        <th>Перевод</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>⭐ Ваш рекорд: <span id="global-record">0</span> правильных ответов подряд</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

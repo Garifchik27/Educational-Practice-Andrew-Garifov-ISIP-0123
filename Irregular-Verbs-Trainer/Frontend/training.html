@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Irregular Verbs Trainer</div>
+        <nav>
+            <a href="index.html">Обучение</a>
+            <a href="training.html" class="active">Тренировка</a>
+            <a href="profile.html">Личный кабинет</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Режим тренировки</h1>
+        
+        <div class="train-controls" id="train-controls">
+            <div class="card">
+                <h3>Настройки тренировки</h3>
+                <label>Количество вопросов:</label>
+                <select id="question-count">
+                    <option value="5">5 вопросов</option>
+                    <option value="10" selected>10 вопросов</option>
+                    <option value="20">20 вопросов</option>
+                    <option value="all">Все глаголы</option>
+                </select>
+                <button id="start-train" class="btn-primary">Начать тренировку</button>
+            </div>
+        </div>
+
+        <div id="train-area" style="display: none;">
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <div class="question-card">
+                <p class="question-counter">Вопрос <span id="current-q-num">1</span> из <span id="total-q"></span></p>
+                <h2 id="infinitive-word">go</h2>
+                <div class="input-group">
+                    <input type="text" id="past-simple-input" placeholder="Past Simple (вторая форма)" autocomplete="off">
+                    <input type="text" id="past-participle-input" placeholder="Past Participle (третья форма)" autocomplete="off">
+                </div>
+                <button id="check-btn" class="btn-check">Проверить</button>
+                <div id="feedback"></div>
+                <div class="score">Текущая серия: <span id="current-streak">0</span> ✅</div>
+            </div>
+        </div>
+
+        <div id="result-area" style="display: none;">
+            <div class="result-card">
+                <h2>📊 Результаты тренировки</h2>
+                <p class="result-score">Правильно: <span id="correct-count">0</span> из <span id="total-count">0</span></p>
+                <p class="streak-result">Максимальная серия: <span id="max-streak-result">0</span></p>
+                <div id="new-record-badge" style="display: none;" class="record-badge">🏆 НОВЫЙ РЕКОРД! 🏆</div>
+                <button id="train-again" class="btn-primary">Тренировка заново</button>
+                <button id="back-to-menu" class="btn-secondary">К таблице глаголов</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
