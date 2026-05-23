@@ -55,27 +55,27 @@
 - Возможность масштабирования до полноценного серверного решения.
 
 ## Use-case диаграмма
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/Use-case.jpg)
+![Use-case-diagram](Photos/Use-case.jpg)
 
 ## Макет веб-приложения
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/Model.jpg)
+![Use-case-diagram](Photos/Model.jpg)
 
 ## Реализованные HTML-страницы
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/Screenshot-Model-1.jpg)
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/Screenshot-Model-2.jpg)
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/Screenshot-Model-3.jpg)
+![Use-case-diagram](Photos/Screenshot-Model-1.jpg)
+![Use-case-diagram](Photos/Screenshot-Model-2.jpg)
+![Use-case-diagram](Photos/Screenshot-Model-3.jpg)
 
 # УП.11 Тема: «Тренажёр неправильных глаголов английского языка»
 
 ## ER-диаграмма
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/ER.jpg)
+![Use-case-diagram](Photos/ER.jpg)
 
 ## Скриншоты выполнения SQL-запросов
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/SQL-1.jpg)
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/SQL-2.jpg)
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/SQL-3.jpg)
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/SQL-4.jpg)
-![Use-case-diagram](Irregular-Verbs-Trainer/Photos/SQL-5.jpg)
+![Use-case-diagram](Photos/SQL-1.jpg)
+![Use-case-diagram](Photos/SQL-2.jpg)
+![Use-case-diagram](Photos/SQL-3.jpg)
+![Use-case-diagram](Photos/SQL-4.jpg)
+![Use-case-diagram](Photos/SQL-5.jpg)
 
 
 
